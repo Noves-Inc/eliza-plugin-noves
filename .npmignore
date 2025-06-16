@@ -1,0 +1,54 @@
+# Source files (only publish built dist/)
+src/
+tsconfig.json
+tsconfig.build.json
+tsup.config.ts
+vitest.config.ts
+
+# Development and testing
+__tests__/
+e2e/
+coverage/
+.nyc_output/
+.elizadb-test/
+
+# ElizaOS development files
+.eliza/
+elizadb/
+
+# Environment files
+.env*
+
+# Development dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log
+logs/
+
+# Cache
+.npm
+.eslintcache
+*.tsbuildinfo
+
+# Lock files
+yarn.lock
+package-lock.json
+bun.lock 
