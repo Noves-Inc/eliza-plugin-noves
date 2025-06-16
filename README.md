@@ -18,15 +18,16 @@ The Noves plugin transforms complex blockchain data into clear, understandable i
 ## Installation
 
 ```bash
-npm install @noves/plugin-noves
+npm install @noves/eliza-plugin-noves
 ```
+
 
 ## Usage
 
 ### Basic Setup
 
 ```typescript
-import { novesPlugin } from '@noves/plugin-noves';
+import { novesPlugin } from '@noves/eliza-plugin-noves';
 
 // Add to your ElizaOS character configuration
 const character = {

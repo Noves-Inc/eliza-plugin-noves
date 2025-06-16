@@ -1,7 +1,7 @@
 {
-  "name": "@noves/plugin-noves",
+  "name": "@noves/eliza-plugin-noves",
   "description": "ElizaOS plugin for blockchain data using Noves Intents",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -31,11 +31,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Noves-Inc/plugin-noves"
+    "url": "https://github.com/Noves-Inc/eliza-plugin-noves"
   },
   "homepage": "https://noves.fi",
   "bugs": {
-    "url": "https://github.com/Noves-Inc/plugin-noves/issues"
+    "url": "https://github.com/Noves-Inc/eliza-plugin-noves/issues"
   },
   "funding": {
     "type": "individual",
@@ -84,8 +84,9 @@
     "lint": "prettier --write ./src",
     "test:component": "vitest run",
     "test:e2e": "elizaos test",
-    "test": "npm run test:component && npm run test:e2e",
-    "publish": "elizaos publish",
+    "test": "npm run test:component",
+    "test:full": "npm run test:component && npm run test:e2e",
+    "publish:elizaos": "elizaos publish",
     "format": "prettier --write ./src",
     "format:check": "prettier --check ./src",
     "prepack": "npm run build",
@@ -105,12 +106,12 @@
     "category": "blockchain",
     "capabilities": [
       "wallet-analysis",
-      "transaction-interpretation", 
+      "transaction-interpretation",
       "token-pricing"
     ],
     "supportedChains": [
       "ethereum",
-      "polygon", 
+      "polygon",
       "base",
       "arbitrum",
       "optimism",
@@ -124,12 +125,18 @@
       "description": "Blockchain data analysis using Noves Intent provider",
       "actions": [
         "GET_RECENT_TXS",
-        "GET_TRANSLATED_TX", 
+        "GET_TRANSLATED_TX",
         "GET_TOKEN_PRICE"
       ],
       "category": "blockchain",
-      "tags": ["blockchain", "defi", "analysis", "noves"]
+      "tags": [
+        "blockchain",
+        "defi",
+        "analysis",
+        "noves"
+      ]
     }
   },
-  "gitHead": "d5bd5c43bfebeb7ac02f9e029f924cb6cd5c2ec7"
+  "gitHead": "d5bd5c43bfebeb7ac02f9e029f924cb6cd5c2ec7",
+  "npmPackage": "@noves/eliza-plugin-noves"
 }

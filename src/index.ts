@@ -2,9 +2,10 @@ import type { Plugin } from '@elizaos/core';
 import { logger } from '@elizaos/core';
 import { getRecentTxsAction, getTranslatedTxAction, getTokenPriceAction } from './actions/index.js';
 
-export const novesPlugin: Plugin = {
+export const novesPlugin: Plugin & { repository?: string } = {
   name: 'plugin-noves',
   description: 'ElizaOS plugin for blockchain data using Noves Intents',
+  repository: 'https://github.com/Noves-Inc/eliza-plugin-noves',
   
   actions: [getRecentTxsAction, getTranslatedTxAction, getTokenPriceAction],
   
